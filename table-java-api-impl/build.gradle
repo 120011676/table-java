@@ -1,0 +1,14 @@
+dependencies {
+    api project(":table-java-api")
+
+    compileOnly 'org.projectlombok:lombok:+'
+    annotationProcessor 'org.projectlombok:lombok:+'
+    testImplementation 'org.testng:testng:+'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:+'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:+'
+}
+
+test {
+    useJUnitPlatform()
+}
